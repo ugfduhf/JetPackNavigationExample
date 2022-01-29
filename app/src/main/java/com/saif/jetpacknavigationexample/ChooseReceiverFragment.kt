@@ -15,17 +15,17 @@ class ChooseReceiverFragment : Fragment(R.layout.fragment_choose_receiver) {
         super.onViewCreated(view, savedInstanceState)
 
         btn_next.setOnClickListener {
-
             //val navOption = NavOptions.Builder()
-
             val receiverName = et_receiver_name.text.toString()
 
-
-
             val action = ChooseReceiverFragmentDirections
-                .actionChooseReceiverFragmentToSendCachFragment(receiverName  )
+                .actionChooseReceiverFragmentToSendCachFragment(receiverName)
             findNavController().navigate(action)
-
         }
+
+        btn_cancel1.setOnClickListener {
+            findNavController().popBackStack()
+        }
+
     }
 }
