@@ -6,4 +6,10 @@
         android:id="@+id/settingsFragment"
         android:title="Setting"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/aboutAppFragment"
+        android:title="About App"
+        android:icon="@drawable/ic_info"
+        app:showAsAction="always"
+        />
 </menu>
